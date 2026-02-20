@@ -1,0 +1,8 @@
+{
+  "name": "wolfe-invoice",
+  "version": "1.0.0",
+  "description": "Wolfe Productions Invoice Generator",
+  "dependencies": {
+    "stripe": "^14.0.0"
+  }
+}
