@@ -300,7 +300,7 @@
     input[type="date"] { width: 100% !important; max-width: 100% !important; min-width: 0 !important; box-sizing: border-box !important; }
     .line-item { grid-template-columns: 2fr 1fr 1fr auto; }
     .col-headers { grid-template-columns: 2fr 1fr 1fr auto; }
-    .line-item .total-display { display: none; }
+    .line-item .total-display { display: block; font-size: 10px; min-width: 55px; padding: 10px 6px; }
     #invoice-preview { margin-top: 24px; }
     .invoice-sheet { padding: 28px 20px 32px 20px; font-size: 11px; }
     .inv-title { font-size: 30px; }
@@ -349,7 +349,7 @@ wolfeproductions@icloud.com</textarea>
     <input type="text" id="due-date" placeholder="YYYY-MM-DD" style="width:100%;box-sizing:border-box;">
   </div>
 
-  <div>
+  <div style="opacity:0.35; pointer-events:none;">
     <div class="section-label">Invoice No. (auto)</div>
     <input type="text" id="inv-number" readonly>
   </div>
@@ -363,7 +363,7 @@ wolfeproductions@icloud.com</textarea>
 
   <div class="tax-row">
     <span>Tax / GST</span>
-    <input type="number" id="tax-rate" value="10" min="0" max="100"> <span>%</span>
+    <input type="number" id="tax-rate" value="0" min="0" max="100"> <span>%</span>
   </div>
 
   <div class="section-label">Payment Info</div>
